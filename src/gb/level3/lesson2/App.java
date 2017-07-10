@@ -26,9 +26,9 @@ public class App {
         Connection dbConnection = null;
         try {
             Class.forName(DB_DRIVER);
-            System.out.println("sqlite JDBC Driver Registered!");
+            System.out.println(DB_DRIVER + " driver Registered!");
         } catch (ClassNotFoundException e) {
-            System.out.println("JDBC driver not found");
+            System.out.println("JDBC driver " + DB_DRIVER + "not found");
             System.out.println(e.getMessage());
         }
         try {
